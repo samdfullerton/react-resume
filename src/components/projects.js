@@ -21,13 +21,10 @@ class Projects extends Component {
               password generator
             </CardText>
             <CardActions border>
-                         
-                
               <Button colored href='https://samdfullerton.github.io/password-generator/'>Live Demo</Button> 
               <a href= 'https://github.com/samdfullerton/password-generator'>
                 <img src={githubMark}></img>
               </a>
-              
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -35,14 +32,26 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'light blue center / cover'}} >React Project #2</CardTitle>
+         
+
+          {/* Project 3 */}
+         
+          
+        </div>
+
+
+      )
+    }  if(this.state.activeTab === 1) {
+      return (
+        <div className="projects-grid">
+        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background:'https://thumbs-prod.si-cdn.com/jr381ZIMuLmYASliRy1NrNOUrxc=/420x240/https://public-media.si-cdn.com/filer/Unified-Theory-Gumbo-631.jpg center / cover'}} >React Project #3</CardTitle>
             <CardText>
-              note taker
+              Whats for Dinner?
             </CardText>
             <CardActions border>
-              <Button colored  href='https://api-routes.herokuapp.com/'>Live Demo</Button>
-              <a href= 'https://github.com/samdfullerton/note-taker'>
+              <Button colored href='https://jalbert12485.github.io/whats-for-dinner/'>Live Demo</Button>
+              <a href= 'https://github.com/jalbert12485/whats-for-dinner'>
                 <img src={githubMark}></img>
               </a>
             </CardActions>
@@ -50,8 +59,6 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-
-          {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: ' center / cover'}} >React Project #3</CardTitle>
             <CardText>
@@ -68,13 +75,13 @@ class Projects extends Component {
             </CardMenu>
           </Card>
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: ' center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'light blue center / cover'}} >React Project #2</CardTitle>
             <CardText>
-              Whats for Dinner?
+              note taker
             </CardText>
             <CardActions border>
-              <Button colored href='https://jalbert12485.github.io/whats-for-dinner/'>Live Demo</Button>
-              <a href= 'https://github.com/jalbert12485/whats-for-dinner'>
+              <Button colored  href='https://api-routes.herokuapp.com/'>Live Demo</Button>
+              <a href= 'https://github.com/samdfullerton/note-taker'>
                 <img src={githubMark}></img>
               </a>
             </CardActions>
@@ -84,15 +91,26 @@ class Projects extends Component {
           </Card>
         </div>
 
-
-      )
-    }  if(this.state.activeTab === 1) {
-      return (
-        <div><h1>This is Javascript</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is NodeJS</h1></div>
+        <div>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'light blue center / cover'}} >React Project #2</CardTitle>
+            <CardText>
+              Readme Generator
+            </CardText>
+            <CardActions border>
+              <Button colored  href='https://drive.google.com/file/d/1N9JXMgVTeMkBUKpuqpEoPwGatbw0Dma7/view'> Demo</Button>
+              <a href= ' https://github.com/samdfullerton/readme-generator'>
+                <img src={githubMark}></img>
+              </a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>
       )
     } else if(this.state.activeTab === 3) {
       return (
