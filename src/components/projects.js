@@ -18,12 +18,16 @@ class Projects extends Component {
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(../images/password-generator.png) center / cover'}} >Node.js</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of can you see changes live the printing and typesetting industry. Lorem Ipsum has been the industry's
+              password generator
             </CardText>
             <CardActions border>
-              <a href='https://samdfullerton.github.io/password-generator/'>             
+                         
+                
+              <Button colored href='https://samdfullerton.github.io/password-generator/'>Live Demo</Button> 
+              <a href= 'https://github.com/samdfullerton/password-generator'>
                 <img src={githubMark}></img>
               </a>
+              
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -32,14 +36,15 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'light blue center / cover'}} >React Project #2</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              note taker
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored  href='https://api-routes.herokuapp.com/'>Live Demo</Button>
+              <a href= 'https://github.com/samdfullerton/note-taker'>
+                <img src={githubMark}></img>
+              </a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -48,14 +53,30 @@ class Projects extends Component {
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: ' center / cover'}} >React Project #3</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              Time Quiz
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored href=' https://samdfullerton.github.io/quiz/'>Live Demo</Button>
+              <a href= 'https://github.com/samdfullerton/note-taker'>
+                <img src={githubMark}></img>
+              </a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: ' center / cover'}} >React Project #3</CardTitle>
+            <CardText>
+              Whats for Dinner?
+            </CardText>
+            <CardActions border>
+              <Button colored href='https://jalbert12485.github.io/whats-for-dinner/'>Live Demo</Button>
+              <a href= 'https://github.com/jalbert12485/whats-for-dinner'>
+                <img src={githubMark}></img>
+              </a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -65,7 +86,7 @@ class Projects extends Component {
 
 
       )
-    } else if(this.state.activeTab === 1) {
+    }  if(this.state.activeTab === 1) {
       return (
         <div><h1>This is Javascript</h1></div>
       )
