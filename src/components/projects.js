@@ -16,13 +16,13 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(../images/password-generator.png) center / cover'}} >Node.js</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'light blue center / cover'}} >React Project #2</CardTitle>
             <CardText>
-              password generator
+             resume
             </CardText>
             <CardActions border>
-              <Button colored href='https://samdfullerton.github.io/password-generator/'>Live Demo</Button> 
-              <a href= 'https://github.com/samdfullerton/password-generator'>
+              <Button colored  href='https://fullerton-portfolio.herokuapp.com/'> Demo</Button>
+              <a href= 'https://github.com/samdfullerton/react-resume'>
                 <img src={githubMark}></img>
               </a>
             </CardActions>
@@ -31,7 +31,7 @@ class Projects extends Component {
             </CardMenu>
           </Card>
 
-          {/* Project 2 */}
+          
          
 
           {/* Project 3 */}
@@ -44,6 +44,7 @@ class Projects extends Component {
     }  if(this.state.activeTab === 1) {
       return (
         <div className="projects-grid">
+          {/* Project 1 */}
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background:'https://thumbs-prod.si-cdn.com/jr381ZIMuLmYASliRy1NrNOUrxc=/420x240/https://public-media.si-cdn.com/filer/Unified-Theory-Gumbo-631.jpg center / cover'}} >React Project #3</CardTitle>
             <CardText>
@@ -59,6 +60,7 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: ' center / cover'}} >React Project #3</CardTitle>
             <CardText>
@@ -74,6 +76,7 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'light blue center / cover'}} >React Project #2</CardTitle>
             <CardText>
@@ -114,7 +117,23 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div><h1>This is Html/CSS</h1></div>
+        <div>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(../images/password-generator.png) center / cover'}} >Node.js</CardTitle>
+            <CardText>
+              password generator
+            </CardText>
+            <CardActions border>
+              <Button colored href='https://samdfullerton.github.io/password-generator/'>Live Demo</Button> 
+              <a href= 'https://github.com/samdfullerton/password-generator'>
+                <img src={githubMark}></img>
+              </a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>
       )
     }
 
