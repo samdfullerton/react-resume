@@ -22,7 +22,7 @@ class Resume extends Component {
             <h2 style={{paddingTop: '2em'}}>Sam Fullerton</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>I am currently in enrolled Northwestern University's Coding Bootcamp. I am excited to learn and explore this wonderful world of coding.</p>
+            <p>I am currently in enrolled in Northwestern University's Coding Bootcamp. I am excited to learn and explore this wonderful world of coding.</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <h5>Phone</h5>
             <p>(773) 733-8608</p>
